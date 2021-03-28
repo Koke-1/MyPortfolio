@@ -8,7 +8,7 @@ export default function Main() {
  return (
     <main>
         <h1>
-            Hellogit
+            LMAO I WANT A WAIFU
         </h1>
         
     </main>
