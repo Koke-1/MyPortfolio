@@ -1,17 +1,17 @@
-import React,{useEffect, useState} from 'react'
-import './css/index.css'
+import React from 'react'
+import HomePage from './HomePage'
+import About from './components/About'
+import Projects from './components/Projects'
+import Technology from './components/Technology'
+import './css/style.css'
 
 export default function Main() {
-    const [Time, setTime] = useState()
-    
-
- return (
-    <main>
-        <h1>
-            LMAO I WANT A WAIFU
-        </h1>
-        
-    </main>
- )
+  return (
+    <>
+      <HomePage/>
+      <About/>
+      <Projects/>
+      <Technology/>
+    </>
+  )
 }
-    

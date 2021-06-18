@@ -1,0 +1,602 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Nerko One", cursive;
+  text-decoration: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+* a:visited {
+  color: black;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 300vh;
+  width: 100vw;
+}
+
+body #root {
+  position: relative;
+  background-color: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+body #root .Home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+body #root .Home nav {
+  width: 100vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5em;
+}
+
+body #root .Home nav:nth-child(1-4) {
+  -webkit-box-flex: 1,;
+      -ms-flex: 1, 0 auto;
+          flex: 1, 0 auto;
+}
+
+body #root .Home .logo {
+  height: 50vh;
+  width: 75vw;
+}
+
+body #root .Home .logo .Beak {
+  -webkit-transform: translate(0%, -60%);
+          transform: translate(0%, -60%);
+  -webkit-animation: beak 0.5s linear forwards;
+          animation: beak 0.5s linear forwards;
+}
+
+body #root .Home .logo .feather {
+  opacity: 0;
+  -webkit-transform: translate(27.6%, 35%);
+          transform: translate(27.6%, 35%);
+}
+
+body #root .Home .logo .feather:nth-child(1) {
+  opacity: 0;
+  fill: green;
+  -webkit-animation: initialFeather1 1s forwards;
+          animation: initialFeather1 1s forwards;
+}
+
+body #root .Home .logo .feather:nth-child(2) {
+  opacity: 0;
+  -webkit-transform: translate(-40%, 70%) rotate(35deg);
+          transform: translate(-40%, 70%) rotate(35deg);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  fill: red;
+  -webkit-animation: initialFeather2 1s forwards;
+          animation: initialFeather2 1s forwards;
+}
+
+body #root .Home .logo .feather:nth-child(3) {
+  opacity: 0;
+  -webkit-transform: translate(75%, 27%) rotate(330deg);
+          transform: translate(75%, 27%) rotate(330deg);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  fill: yellow;
+  -webkit-animation: initialFeather3 1s forwards;
+          animation: initialFeather3 1s forwards;
+}
+
+body #root .Home .logo .wing1 {
+  -webkit-transform: translate(50%, 0%);
+          transform: translate(50%, 0%);
+  -webkit-animation: wings1 0.5s linear forwards;
+          animation: wings1 0.5s linear forwards;
+}
+
+body #root .Home .logo .wing2 {
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  -webkit-animation: wings2 0.5s linear forwards;
+          animation: wings2 0.5s linear forwards;
+}
+
+@-webkit-keyframes initialFeather1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(27.6%, 50%);
+            transform: translate(27.6%, 50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(27.6%, 60%);
+            transform: translate(27.6%, 60%);
+  }
+}
+
+@keyframes initialFeather1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(27.6%, 50%);
+            transform: translate(27.6%, 50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(27.6%, 60%);
+            transform: translate(27.6%, 60%);
+  }
+}
+
+@-webkit-keyframes initialFeather2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-40%, 70%) rotate(35deg);
+            transform: translate(-40%, 70%) rotate(35deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-60.5%, 90%) rotate(35deg);
+            transform: translate(-60.5%, 90%) rotate(35deg);
+  }
+}
+
+@keyframes initialFeather2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(-40%, 70%) rotate(35deg);
+            transform: translate(-40%, 70%) rotate(35deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-60.5%, 90%) rotate(35deg);
+            transform: translate(-60.5%, 90%) rotate(35deg);
+  }
+}
+
+@-webkit-keyframes initialFeather3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(75%, 27%) rotate(330deg);
+            transform: translate(75%, 27%) rotate(330deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(94%, 48%) rotate(330deg);
+            transform: translate(94%, 48%) rotate(330deg);
+  }
+}
+
+@keyframes initialFeather3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(75%, 27%) rotate(330deg);
+            transform: translate(75%, 27%) rotate(330deg);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(94%, 48%) rotate(330deg);
+            transform: translate(94%, 48%) rotate(330deg);
+  }
+}
+
+@-webkit-keyframes wings1 {
+  0% {
+    -webkit-transform: translate(40%, 0%);
+            transform: translate(40%, 0%);
+  }
+  25% {
+    -webkit-transform: translate(30%, 0%);
+            transform: translate(30%, 0%);
+  }
+  50% {
+    -webkit-transform: translate(20%, 0%);
+            transform: translate(20%, 0%);
+  }
+  75% {
+    -webkit-transform: translate(10%, 0%);
+            transform: translate(10%, 0%);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+@keyframes wings1 {
+  0% {
+    -webkit-transform: translate(40%, 0%);
+            transform: translate(40%, 0%);
+  }
+  25% {
+    -webkit-transform: translate(30%, 0%);
+            transform: translate(30%, 0%);
+  }
+  50% {
+    -webkit-transform: translate(20%, 0%);
+            transform: translate(20%, 0%);
+  }
+  75% {
+    -webkit-transform: translate(10%, 0%);
+            transform: translate(10%, 0%);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+@-webkit-keyframes wings2 {
+  0% {
+    -webkit-transform: translate(-40%, 0%);
+            transform: translate(-40%, 0%);
+  }
+  25% {
+    -webkit-transform: translate(-30%, 0%);
+            transform: translate(-30%, 0%);
+  }
+  50% {
+    -webkit-transform: translate(-20%, 0%);
+            transform: translate(-20%, 0%);
+  }
+  75% {
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+@keyframes wings2 {
+  0% {
+    -webkit-transform: translate(-40%, 0%);
+            transform: translate(-40%, 0%);
+  }
+  25% {
+    -webkit-transform: translate(-30%, 0%);
+            transform: translate(-30%, 0%);
+  }
+  50% {
+    -webkit-transform: translate(-20%, 0%);
+            transform: translate(-20%, 0%);
+  }
+  75% {
+    -webkit-transform: translate(-10%, 0%);
+            transform: translate(-10%, 0%);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+@-webkit-keyframes beak {
+  0% {
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+  }
+  25% {
+    -webkit-transform: translate(0%, -40%);
+            transform: translate(0%, -40%);
+  }
+  50% {
+    -webkit-transform: translate(0%, -30%);
+            transform: translate(0%, -30%);
+  }
+  75% {
+    -webkit-transform: translate(0%, -20%);
+            transform: translate(0%, -20%);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+@keyframes beak {
+  0% {
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+  }
+  25% {
+    -webkit-transform: translate(0%, -40%);
+            transform: translate(0%, -40%);
+  }
+  50% {
+    -webkit-transform: translate(0%, -30%);
+            transform: translate(0%, -30%);
+  }
+  75% {
+    -webkit-transform: translate(0%, -20%);
+            transform: translate(0%, -20%);
+  }
+  100% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+body #root .Home .links {
+  top: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 10vh;
+  width: 100vw;
+}
+
+body #root .Home .links .linkedin {
+  -webkit-transform: translate(150%, 10%);
+          transform: translate(150%, 10%);
+}
+
+body #root .Home .links .github {
+  -webkit-transform: translate(-150%, 10%);
+          transform: translate(-150%, 10%);
+}
+
+body #root .About {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+body #root .About h1 {
+  position: relative;
+  height: 5%;
+  text-align: center;
+  font-size: 3em;
+  width: 100%;
+}
+
+body #root .About .Info {
+  position: relative;
+  top: -22.5%;
+  font-size: 1.75em;
+  text-align: center;
+  height: 33%;
+  letter-spacing: 0.11em;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  body #root .About .Info {
+    font-size: 1.0725em;
+  }
+}
+
+body #root .About .AboutMe {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  bottom: 33%;
+}
+
+body #root .Technology {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  height: 50vh;
+  width: 100vw;
+}
+
+body #root .Technology .TechInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90%;
+  width: 100%;
+}
+
+body #root .Technology .TechInfo .TechBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90%;
+  width: 85%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+}
+
+body #root .Technology .TechInfo .TechBox h1 {
+  position: relative;
+  border-bottom: px solid black;
+  top: -5%;
+  height: 10%;
+  width: 33%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  text-align: center;
+}
+
+body #root .Technology .TechInfo .TechBox ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 75%;
+  list-style: none;
+}
+
+body #root .Technology .TechInfo .TechBox ol li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75%;
+  width: 15%;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  body #root .Technology .TechInfo .TechBox ol li {
+    height: 40%;
+    width: 40%;
+  }
+}
+
+body #root .Technology .TechInfo button {
+  height: 100%;
+  width: 7%;
+}
+
+body #root .Projects {
+  background-color: white;
+  height: 50vh;
+  width: 100vw;
+}
+
+body #root .Projects .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 95%;
+  width: 100%;
+}
+
+body #root .Projects .all .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90%;
+  width: 20%;
+  border-radius: 3.5em;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 2px solid black;
+}
+/*# sourceMappingURL=style.css.map */

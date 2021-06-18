@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import "_codes";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nerko One", cursive;
+  text-decoration: none;
+  max-width: 100%;
+  max-height: 100%;
+  a {
+    &:visited {
+      color: black;
+    }
+  }
+}
+body {
+  @include Flex(column, wrap, space-around, center);
+  position: relative;
+  height: 300vh;
+  width: 100vw;
+  #root {
+    position: relative;
+    background-color: yellow;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    .Home {
+      @include Flex(column, nowrap, space-around, center);
+      height: 100vh;
+      width: 100vw;
+      nav {
+        width: 100vw;
+        height: 10vh;
+        @include Flex(row, wrap, space-around, center);
+        font-size: 1.5em;
+        &:nth-child(1-4) {
+          flex: 1, 0 auto;
+        }
+      }
+      .logo {
+        height: 50vh;
+        width: 75vw;
+        .Beak {
+          transform: translate(0%, -60%);
+          animation: beak 0.5s linear forwards;
+        }
+        .feather {
+          opacity: 0;
+          transform: translate(27.6%, 35%);
+
+          &:nth-child(1) {
+            opacity: 0;
+            fill: green;
+            animation: initialFeather1 1s forwards;
+          }
+          &:nth-child(2) {
+            opacity: 0;
+            transform: translate(-40%, 70%) rotate(35deg);
+            transform-origin: bottom right;
+            fill: red;
+            animation: initialFeather2 1s forwards;
+          }
+          &:nth-child(3) {
+            opacity: 0;
+            transform: translate(75%, 27%) rotate(330deg);
+            transform-origin: bottom left;
+            fill: yellow;
+            animation: initialFeather3 1s forwards;
+          }
+        }
+        .wing1 {
+          transform: translate(50%, 0%);
+          animation: wings1 0.5s linear forwards;
+        }
+        .wing2 {
+          transform: translate(-50%, 0%);
+          animation: wings2 0.5s linear forwards;
+        }
+        @keyframes initialFeather1 {
+          0% {
+            opacity: 0;
+            transform: translate(27.6%, 50%);
+          }
+          100% {
+            opacity: 1;
+            transform: translate(27.6%, 60%);
+          }
+        }
+        @keyframes initialFeather2 {
+          0% {
+            opacity: 0;
+            transform: translate(-40%, 70%) rotate(35deg);
+          }
+          100% {
+            opacity: 1;
+            transform: translate(-60.5%, 90%) rotate(35deg);
+          }
+        }
+        @keyframes initialFeather3 {
+          0% {
+            opacity: 0;
+            transform: translate(75%, 27%) rotate(330deg);
+          }
+          100% {
+            opacity: 1;
+            transform: translate(94%, 48%) rotate(330deg);
+          }
+        }
+        @keyframes wings1 {
+          0% {
+            transform: translate(40%, 0%);
+          }
+          25% {
+            transform: translate(30%, 0%);
+          }
+          50% {
+            transform: translate(20%, 0%);
+          }
+          75% {
+            transform: translate(10%, 0%);
+          }
+          100% {
+            transform: translate(0%, 0%);
+          }
+        }
+        @keyframes wings2 {
+          0% {
+            transform: translate(-40%, 0%);
+          }
+          25% {
+            transform: translate(-30%, 0%);
+          }
+          50% {
+            transform: translate(-20%, 0%);
+          }
+          75% {
+            transform: translate(-10%, 0%);
+          }
+          100% {
+            transform: translate(0%, 0%);
+          }
+        }
+        @keyframes beak {
+          0% {
+            transform: translate(0%, -50%);
+          }
+          25% {
+            transform: translate(0%, -40%);
+          }
+          50% {
+            transform: translate(0%, -30%);
+          }
+          75% {
+            transform: translate(0%, -20%);
+          }
+          100% {
+            transform: translate(0%, 0%);
+          }
+        }
+      }
+      .links {
+        top: 100%;
+        align-self: flex-end;
+        height: 10vh;
+        width: 100vw;
+        .linkedin {
+          transform: translate(150%, 10%);
+        }
+        .github {
+          transform: translate(-150%, 10%);
+        }
+      }
+    }
+    .About {
+      @include Flex(column, wrap, space-around, center);
+      height: 100vh;
+      width: 100vw;
+      h1 {
+        position: relative;
+        height: 5%;
+        text-align: center;
+        font-size: 3em;
+        width: 100%;
+      }
+      .Info {
+        position: relative;
+        top: -22.5%;
+        font-size: 1.75em;
+        @media screen and (max-width: 600px) {
+          font-size: 1.0725em;
+        }
+        text-align: center;
+        height: 33%;
+        letter-spacing: 0.11em;
+        width: 100%;
+      }
+      .AboutMe {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        bottom: 33%;
+      }
+    }
+    .Technology {
+      @include Flex(column, wrap, center, center);
+      background-color: white;
+      height: 50vh;
+      width: 100vw;
+      .TechInfo {
+        @include Flex(column, wrap, center, center);
+        height: 90%;
+        width: 100%;
+
+        .TechBox {
+          @include Flex(column, wrap, space-evenly, center);
+          height: 90%;
+          width: 85%;
+          border-top: 2px solid black;
+          border-bottom: 2px solid black;
+          margin-left: 0.5%;
+          margin-right: 0.5%;
+          h1 {
+            position: relative;
+            border-bottom: px solid black;
+            top: -5%;
+            height: 10%;
+            width: 33%;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 100%;
+            text-align: center;
+          }
+          ol {
+            @include Flex(column, wrap, space-around, center);
+            width: 100%;
+            height: 75%;
+            list-style: none;
+            li {
+              @include Flex(column, wrap, center, center);
+              height: 75%;
+              width: 15%;
+              border-radius: 100%;
+              @media screen and (max-width: 600px) {
+                height: 40%;
+                width: 40%;
+              }
+            }
+          }
+        }
+        button {
+          height: 100%;
+          width: 7%;
+        }
+      }
+    }
+    .Projects {
+      background-color: white;
+      height: 50vh;
+      width: 100vw;
+      .all {
+        @include Flex(row, wrap, center, center);
+        height: 95%;
+        width: 100%;
+        .project {
+          @include Flex(column, wrap, center, center);
+          height: 90%;
+          width: 20%;
+          border-radius: 3.5em;
+          margin-left: 5%;
+          margin-right: 5%;
+          border: 2px solid black;
+        }
+      }
+    }
+  }
+}
