@@ -12,11 +12,11 @@ export default function About() {
             <article className="Info" >
                 <div >
                   <h4>Intro</h4>
-                  <p> Hello my name is Jorge San Juan, I come from Houston, Texas and born into a beautiful and full of culture Mexican family.</p>
+                  <p> Hello, my name is Jorge San Juan. I was born in Houston, Texas, and was brought up by a beautiful and full of culture Mexican family.</p>
                 </div>
                 <div>
                   <h4>Story</h4>
-                  <p>I got into Web Development when I was a kid playing a game about creating your own game with LUA code called Roblox. I created a few simple games and got kinda deep into it. When it was time to pick what I wanted to do as a living I browsed through back-end, game development and security, but decided to do front-end to the fact of the amount of creativity and</p>
+                  <p>My first experience with coding came from when I was a kid playing ROBLOX, which is an online game platform and game creation system enabling people just like me to play and create games.  When I reached the age of having to choose a career path, a job in technology was a no brainer, it was just about in what area. Web development ended up being an easy decision because I love the amount of freedom and creativity it gives me to create beautiful sites.</p>
                 </div>
                 <div>
                   <h4>Goals</h4>
