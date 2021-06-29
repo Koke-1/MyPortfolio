@@ -260,19 +260,26 @@ body {
       background-color: white;
       height: 50vh;
       width: 100vw;
+      text-align: center;
       .all {
         @include Flex(row, wrap, center, center);
         height: 95%;
         width: 100%;
-        .project {
+        a{
           @include Flex(column, wrap, center, center);
           height: 90%;
-          width: 20%;
+          max-width: 35%;
           border-radius: 3.5em;
-          margin-left: 5%;
-          margin-right: 5%;
           border: 2px solid black;
+          .project {
+          @include Flex(column, wrap, center, center);
+          height: 100%;
+          width: 100%;
+          border-radius: 3.5em;
+          font-size: 1em;
         }
+        }
+        
       }
     }
   }

@@ -6,20 +6,22 @@ export default function Projects() {
         <section className="Projects" >
             <h1>Projects</h1>
             <article className="all" >
-                {projectinfo.map((info)=>{
-                    const {title,color,desc,svg} = info
+                {projectinfo.map((info) => {
+                    const { title, color, desc, link } = info
                     return (
-                       <div className="project" style={{backgroundColor:color}} >
-                        <h3>{title}</h3>
-                        <p>{desc}</p>
-                       </div> 
+                        <a href={link} >
+                            <div className="project" style={{ backgroundColor: color }} >
+                                <h3>{title}</h3>
+                                <p>{desc}</p>
+                            </div>
+                        </a>
                     )
                 })}
-                
-        
+
+
             </article>
 
-            
+
         </section>
     )
 }
