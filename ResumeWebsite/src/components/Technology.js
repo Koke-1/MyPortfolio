@@ -23,7 +23,7 @@ export default function Technology() {
 
 
     return (
-        <section className="Technology" >
+        <section id="Technology" >
             <h1>Technologies</h1>
             <article className="TechInfo">
                 <button onClick={()=> prev()}> - </button>

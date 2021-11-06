@@ -7,7 +7,7 @@ export default function About() {
     }, [])
     
     return (
-        <section className="About" >
+        <section id="About" >
             <h1> About me </h1>
             <article className="Info" >
                 <div >

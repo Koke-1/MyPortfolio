@@ -3,7 +3,7 @@ import projectinfo from '../Local API/projectsinfo'
 
 export default function Projects() {
     return (
-        <section className="Projects" >
+        <section id="Projects" >
             <h1>Projects</h1>
             <article className="all" >
                 {projectinfo.map((info) => {

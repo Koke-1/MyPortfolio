@@ -4,12 +4,12 @@ export default function HomePage() {
 
     return (
         <>
-        <section className="Home" >
+        <section id="Home" >
         <nav>
-          <a href="http://www.google.com/" rel="noreferrer" >Home</a>
-          <a href="http://www.google.com/" rel="noreferrer" >About</a>
-          <a href="http://www.google.com/" rel="noreferrer" >Technologies</a>
-          <a href="http://www.google.com/" rel="noreferrer" >Projects</a>
+          <a href="#Home" rel="noreferrer" >Home</a>
+          <a href="#About" rel="noreferrer" >About</a>
+          <a href="#Technology" rel="noreferrer" >Technologies</a>
+          <a href="#Projects" rel="noreferrer" >Projects</a>
         </nav>
         <svg className="logo" xmlns="http://www.w3.org/2000/svg"viewBox="-28 -10 200 200" >
           <path className="feather"

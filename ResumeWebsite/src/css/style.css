@@ -51,7 +51,7 @@ body #root {
   width: 100%;
 }
 
-body #root .Home {
+body #root #Home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,7 +68,7 @@ body #root .Home {
   width: 100vw;
 }
 
-body #root .Home nav {
+body #root #Home nav {
   width: 100vw;
   height: 10vh;
   display: -webkit-box;
@@ -86,38 +86,38 @@ body #root .Home nav {
   font-size: 1.5em;
 }
 
-body #root .Home nav:nth-child(1-4) {
+body #root #Home nav:nth-child(1-4) {
   -webkit-box-flex: 1,;
       -ms-flex: 1, 0 auto;
           flex: 1, 0 auto;
 }
 
-body #root .Home .logo {
+body #root #Home .logo {
   height: 50vh;
   width: 75vw;
 }
 
-body #root .Home .logo .Beak {
+body #root #Home .logo .Beak {
   -webkit-transform: translate(0%, -60%);
           transform: translate(0%, -60%);
   -webkit-animation: beak 0.5s linear forwards;
           animation: beak 0.5s linear forwards;
 }
 
-body #root .Home .logo .feather {
+body #root #Home .logo .feather {
   opacity: 0;
   -webkit-transform: translate(27.6%, 35%);
           transform: translate(27.6%, 35%);
 }
 
-body #root .Home .logo .feather:nth-child(1) {
+body #root #Home .logo .feather:nth-child(1) {
   opacity: 0;
   fill: green;
   -webkit-animation: initialFeather1 1s forwards;
           animation: initialFeather1 1s forwards;
 }
 
-body #root .Home .logo .feather:nth-child(2) {
+body #root #Home .logo .feather:nth-child(2) {
   opacity: 0;
   -webkit-transform: translate(-40%, 70%) rotate(35deg);
           transform: translate(-40%, 70%) rotate(35deg);
@@ -128,7 +128,7 @@ body #root .Home .logo .feather:nth-child(2) {
           animation: initialFeather2 1s forwards;
 }
 
-body #root .Home .logo .feather:nth-child(3) {
+body #root #Home .logo .feather:nth-child(3) {
   opacity: 0;
   -webkit-transform: translate(75%, 27%) rotate(330deg);
           transform: translate(75%, 27%) rotate(330deg);
@@ -139,14 +139,14 @@ body #root .Home .logo .feather:nth-child(3) {
           animation: initialFeather3 1s forwards;
 }
 
-body #root .Home .logo .wing1 {
+body #root #Home .logo .wing1 {
   -webkit-transform: translate(50%, 0%);
           transform: translate(50%, 0%);
   -webkit-animation: wings1 0.5s linear forwards;
           animation: wings1 0.5s linear forwards;
 }
 
-body #root .Home .logo .wing2 {
+body #root #Home .logo .wing2 {
   -webkit-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
   -webkit-animation: wings2 0.5s linear forwards;
@@ -369,7 +369,7 @@ body #root .Home .logo .wing2 {
   }
 }
 
-body #root .Home .links {
+body #root #Home .links {
   top: 100%;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -377,17 +377,17 @@ body #root .Home .links {
   width: 100vw;
 }
 
-body #root .Home .links .linkedin {
+body #root #Home .links .linkedin {
   -webkit-transform: translate(150%, 10%);
           transform: translate(150%, 10%);
 }
 
-body #root .Home .links .github {
+body #root #Home .links .github {
   -webkit-transform: translate(-150%, 10%);
           transform: translate(-150%, 10%);
 }
 
-body #root .About {
+body #root #About {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,7 +404,7 @@ body #root .About {
   width: 100vw;
 }
 
-body #root .About h1 {
+body #root #About h1 {
   position: relative;
   height: 5%;
   text-align: center;
@@ -412,7 +412,7 @@ body #root .About h1 {
   width: 100%;
 }
 
-body #root .About .Info {
+body #root #About .Info {
   position: relative;
   top: -22.5%;
   font-size: 1.75em;
@@ -423,19 +423,19 @@ body #root .About .Info {
 }
 
 @media screen and (max-width: 600px) {
-  body #root .About .Info {
+  body #root #About .Info {
     font-size: 1.0725em;
   }
 }
 
-body #root .About .AboutMe {
+body #root #About .AboutMe {
   position: absolute;
   height: 100vh;
   width: 100vw;
   bottom: 33%;
 }
 
-body #root .Technology {
+body #root #Technology {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,7 +454,7 @@ body #root .Technology {
   width: 100vw;
 }
 
-body #root .Technology .TechInfo {
+body #root #Technology .TechInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,7 +472,7 @@ body #root .Technology .TechInfo {
   width: 100%;
 }
 
-body #root .Technology .TechInfo .TechBox {
+body #root #Technology .TechInfo .TechBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,7 +494,7 @@ body #root .Technology .TechInfo .TechBox {
   margin-right: 0.5%;
 }
 
-body #root .Technology .TechInfo .TechBox h1 {
+body #root #Technology .TechInfo .TechBox h1 {
   position: relative;
   border-bottom: px solid black;
   top: -5%;
@@ -505,7 +505,7 @@ body #root .Technology .TechInfo .TechBox h1 {
   text-align: center;
 }
 
-body #root .Technology .TechInfo .TechBox ol {
+body #root #Technology .TechInfo .TechBox ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,7 +523,7 @@ body #root .Technology .TechInfo .TechBox ol {
   list-style: none;
 }
 
-body #root .Technology .TechInfo .TechBox ol li {
+body #root #Technology .TechInfo .TechBox ol li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -543,25 +543,25 @@ body #root .Technology .TechInfo .TechBox ol li {
 }
 
 @media screen and (max-width: 600px) {
-  body #root .Technology .TechInfo .TechBox ol li {
+  body #root #Technology .TechInfo .TechBox ol li {
     height: 40%;
     width: 40%;
   }
 }
 
-body #root .Technology .TechInfo button {
+body #root #Technology .TechInfo button {
   height: 100%;
   width: 7%;
 }
 
-body #root .Projects {
+body #root #Projects {
   background-color: white;
   height: 50vh;
   width: 100vw;
   text-align: center;
 }
 
-body #root .Projects .all {
+body #root #Projects .all {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,7 +579,7 @@ body #root .Projects .all {
   width: 100%;
 }
 
-body #root .Projects .all a {
+body #root #Projects .all a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -599,7 +599,7 @@ body #root .Projects .all a {
   border: 2px solid black;
 }
 
-body #root .Projects .all a .project {
+body #root #Projects .all a .project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
