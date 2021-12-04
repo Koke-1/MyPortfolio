@@ -1,35 +1,46 @@
 const techInfo = [
     {
         title:"HTML5",
-        color:"orange",
-        subtechs:{
-            One: "ES6" ,
-            Two: "Forms" ,
-            Three: "Canvas",
-            Four: "SVG"
-        }
+        color:"red",
+        subtechs:[
+            "ES6" ,
+            "Forms" ,
+            "Canvas",
+            "SVG"
+        ]
     },
     {
         title:"CSS3",
         color:"blue",
-        subtechs:{
-            One: "SASS" ,
-            Two: "Responsive Design" ,
-            Three: "Animation",
-            Four: "Designing"
-        }
+        subtechs:[
+            "SASS" ,
+            "Responsive Design" ,
+            "Animation",
+            "Designing"
+        ]
 
     },
     {
         title:"JavaScript",
         color:"yellow",
-        subtechs:{
-            One: "ReactJS" ,
-            Two: "API" ,
-            Three: "DOM Manipulation",
-            Four: "Error Handling"
-        }
+        subtechs:[
+            "ReactJS" ,
+            "API" ,
+            "DOM Manipulation",
+            "Error Handling"
+        ]
+    },
+    {
+        title:"Nodejs",
+        color:"green",
+        subtechs:[
+            "Express" ,
+            "NPM" ,
+            "MongoDB",
+            "Axios"
+        ]
     }
+
 
 
 

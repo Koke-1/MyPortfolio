@@ -11,8 +11,10 @@ export default function Projects() {
                     return (
                         <a href={link} >
                             <div className="project" style={{ backgroundColor: color }} >
-                                <h3>{title}</h3>
-                                <p>{desc}</p>
+                                <div>
+                                 <h1>{title}</h1>
+                                 <p>{desc}</p>  
+                                </div>
                             </div>
                         </a>
                     )
