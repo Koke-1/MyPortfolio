@@ -1,60 +1,12 @@
-import React,{useEffect, useState} from 'react'
-import square from "../svg/square.svg"
-import techInfo from '../Local API/techInfo'
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 
-export default function Technology() {
-    const [techno, settechno] = useState(0)
-
-    useEffect(() => {
-        const squares = document.querySelectorAll(".square")
-         squares.forEach((data)=> data.style.transform = "rotate(0deg)" )
-         squares[techno].style.transformOrigin = "25% 60%"
-         squares[techno].style.transform = "rotate(45deg)"
-
-    }, [techno])
-    
-
-    return (
-        <section id="Technology" >
-            <h1 className="techno" >Technologies</h1>
-            <article style={{backgroundColor:'white'}}  className="TechInfo">
-                <div className="techholder" >
-                    <div className="titleholder" >
-                        <div className='title' style={{backgroundColor:techInfo[techno].color}}  >
-                            <div className='imgholder' >
-                              <img src={techInfo[techno].img} alt="" />  
-                            </div> 
-                          
-                          
-                        </div>
-                        
-                        </div>
-                    <div className="onetech" >
-                        {
-                    techInfo[techno].subtechs.map((info)=>{
-                        console.log(info);
-                        return(
-                            <div className='techcard' style={{border:`.1em solid ${techInfo[techno].color}`}} >
-                              <h1>{info.tech}</h1>  
-                            </div>
-                            
-                        )
-                    })
-                }</div>
-                
-                </div>
-                <div className="switch" >
-                    <div className='switchhold'>
-                        {techInfo.map((data,index)=>{
-                    const test = (e) => {
-                        settechno(index)
-                    }
-
-                    return (
-                        <div className='svgholder' >
-                            <svg xmlns="http://www.w3.org/2000/svg"width="25%" height="100%" viewBox="-175 0 1500 600" onClick={(e)=>test()} >
-<path className='square'
-        fill="none" stroke={techInfo[index].color} stroke-width="75" onClick={(e)=>test()}
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="7.15556in" height="7.15556in"
+     viewBox="0 0 644 644">
+  <path id="Selection"
+        fill="none" stroke="black" stroke-width="1"
         d="M 45.00,0.08
            C 45.00,0.08 98.00,0.08 98.00,0.08
              98.00,0.08 198.00,0.08 198.00,0.08
@@ -110,17 +62,4 @@ export default function Technology() {
              17.00,17.00 17.00,627.00 17.00,627.00
              17.00,627.00 626.00,627.00 626.00,627.00
              626.00,627.00 626.00,17.00 626.00,17.00 Z" />
-</svg></div>
-                        
-                    )
-                })
-            }
-                    </div>
-                   
-                </div>
-                
-            </article> 
-            
-        </section>
-    )
-}
+</svg>

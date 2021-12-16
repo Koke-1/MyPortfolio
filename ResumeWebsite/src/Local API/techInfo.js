@@ -1,43 +1,80 @@
 const techInfo = [
     {
         title:"HTML5",
-        color:"red",
+        bcolor: "orange",
+        color:"#f8961e",
+        img:"https://img.icons8.com/ios/2x/html-5.png",
         subtechs:[
-            "ES6" ,
-            "Forms" ,
-            "Canvas",
-            "SVG"
+            {
+                tech: "Forms" ,
+            },
+            {
+                tech: "Canvas",
+            },
+            {
+                tech: "SVG",
+            }
         ]
     },
     {
         title:"CSS3",
-        color:"blue",
+        bcolor:"blue",
+        color:"#277da1",
+        img:"https://img.icons8.com/wired/2x/css3.png",
         subtechs:[
-            "SASS" ,
-            "Responsive Design" ,
-            "Animation",
-            "Designing"
+            {
+                tech: "SASS" ,
+            },
+            {
+                tech: "Responsive Design" ,
+            },
+            {
+                tech: "Animation",
+            },
+            {
+                tech: "Designing",
+            }
         ]
 
     },
     {
         title:"JavaScript",
-        color:"yellow",
+        bcolor:"yellow",
+        color:"#f9c74f",
+        img:"https://img.icons8.com/ios/452/javascript-logo.png",
         subtechs:[
-            "ReactJS" ,
-            "API" ,
-            "DOM Manipulation",
-            "Error Handling"
+            {
+                tech: "ReactJS" ,
+            },
+            {
+                tech: "API" ,
+            },
+            {
+                tech: "DOM Manipulation",
+            },
+            {
+                tech: "Error Handling",
+            }
         ]
     },
     {
         title:"Nodejs",
-        color:"green",
+        bcolor:"green",
+        color:"#90be6d",
+        img:"https://img.icons8.com/windows/452/nodejs.png",
         subtechs:[
-            "Express" ,
-            "NPM" ,
-            "MongoDB",
-            "Axios"
+            {
+                tech: "Express" ,
+            },
+            {
+                tech: "NPM" ,
+            },
+            {
+                tech: "MongoDB",
+            },
+            {
+                tech: "Axios",
+            }
         ]
     }
 
