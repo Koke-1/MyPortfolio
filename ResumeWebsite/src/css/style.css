@@ -474,9 +474,7 @@ body #root #About .Info div p {
 
 body #root #About .AboutMe {
   position: absolute;
-  height: 100vh;
-  width: 100vw;
-  bottom: 33.1%;
+  width: 100%;
 }
 
 body #root #Technology {
