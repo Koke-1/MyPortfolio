@@ -8,7 +8,9 @@ export default function About() {
     
     return (
         <section id="About" >
+          <div>
             <h1> About me </h1>
+          </div>
             <article className="Info" >
                 <div >
                   <h4>Intro</h4>

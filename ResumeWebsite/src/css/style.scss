@@ -52,12 +52,14 @@ body {
           flex: 1, 0 auto;
         }
         a {
-          font-size: 1.3em;
+          font-size: 1.5em;
+          font-weight: bold;
           width: 25%;
           text-align: center;
+          height: 45%;
           color: black;
           @media screen and (max-width: 600px) {
-            font-size: 0.65em;
+            font-size: 0.6em;
           }
           &:hover {
             background-color: white;
@@ -202,27 +204,31 @@ body {
       }
     }
     #About {
-      @include Flex(column, wrap, space-around, center);
+      @include Flex(column, wrap, flex-start, center);
       height: 100vh;
       width: 100vw;
-      h1 {
-        position: relative;
-        height: 10%;
-        text-align: center;
-        font-size: 3em;
-        width: 100%;
+      div {
+        h1 {
+          position: relative;
+          height: 10%;
+          text-align: center;
+          font-size: 3em;
+          width: 100%;
+        }
       }
+
       .Info {
+        @include Flex(column, wrap, flex-start, center);
         position: relative;
-        top: -22.5%;
         font-size: 1.6em;
         @media screen and (max-width: 600px) {
           font-size: 1.0725em;
+          height: 90%;
         }
         text-align: center;
-        height: 50%;
+        height: 80%;
         letter-spacing: 0em;
-        width: 80%;
+        width: 75%;
         div {
           h4 {
             font-size: 1em;

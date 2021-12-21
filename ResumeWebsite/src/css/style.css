@@ -94,15 +94,17 @@ body #root #Home nav:nth-child(1-4) {
 }
 
 body #root #Home nav a {
-  font-size: 1.3em;
+  font-size: 1.5em;
+  font-weight: bold;
   width: 25%;
   text-align: center;
+  height: 45%;
   color: black;
 }
 
 @media screen and (max-width: 600px) {
   body #root #Home nav a {
-    font-size: 0.65em;
+    font-size: 0.6em;
   }
 }
 
@@ -417,8 +419,9 @@ body #root #About {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -426,7 +429,7 @@ body #root #About {
   width: 100vw;
 }
 
-body #root #About h1 {
+body #root #About div h1 {
   position: relative;
   height: 10%;
   text-align: center;
@@ -435,18 +438,31 @@ body #root #About h1 {
 }
 
 body #root #About .Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
-  top: -22.5%;
   font-size: 1.6em;
   text-align: center;
-  height: 50%;
+  height: 80%;
   letter-spacing: 0em;
-  width: 80%;
+  width: 75%;
 }
 
 @media screen and (max-width: 600px) {
   body #root #About .Info {
     font-size: 1.0725em;
+    height: 90%;
   }
 }
 
