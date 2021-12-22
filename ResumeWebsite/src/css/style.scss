@@ -188,6 +188,8 @@ body {
         }
       }
       article {
+        @include Flex(row, wrap, space-evenly, center);
+        width: 100%;
         background-color: white;
         .links {
           top: 100%;
@@ -228,7 +230,7 @@ body {
         text-align: center;
         height: 80%;
         letter-spacing: 0em;
-        width: 75%;
+        width: 80%;
         div {
           h4 {
             font-size: 1em;
